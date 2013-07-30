@@ -1,0 +1,75 @@
+<?php echo $this->doctype() ?>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ProFlow by SanSIS</title>
+  <?php
+  
+  	$this->headLink()->appendStylesheet($this->baseUrl().'/visual/css/site/global.css');
+  	$this->headLink()->appendStylesheet($this->baseUrl().'/visual/css/components/jquery.simpleautocomplete.css');
+  	$this->headLink()->appendStylesheet($this->baseUrl().'/visual/css/components/jquery.cleditor.css');
+  	$this->headLink()->appendStylesheet($this->baseUrl().'/visual/css/components/jquery.anytimec.css');
+  	$this->headLink()->appendStylesheet($this->baseUrl().'/visual/css/components/jquery-ui/jquery-ui.custom.css');
+
+  	$this->headScript()->prependFile($this->baseUrl().'/js/functions/inputMasks.js');
+  	$this->headScript()->prependFile($this->baseUrl().'/js/functions/datePicker.js');
+  	$this->headScript()->prependFile($this->baseUrl().'/js/functions/menu.js');
+  	
+  	$this->headScript()->prependFile($this->baseUrl().'/js/jquery/jquery.simpleautocomplete.js');
+  	$this->headScript()->prependFile($this->baseUrl().'/js/jquery/jquery.cleditor.js');
+  	$this->headScript()->prependFile($this->baseUrl().'/js/jquery/jquery.maskedinput.min.js');
+  	$this->headScript()->prependFile($this->baseUrl().'/js/jquery/jquery.maskedmoney.js');
+  	$this->headScript()->prependFile($this->baseUrl().'/js/jquery/jquery.anytimec.js');
+  	$this->headScript()->prependFile($this->baseUrl().'/js/jquery/jquery-ui.custom.min.js');
+  	$this->headScript()->prependFile($this->baseUrl().'/js/jquery/jquery-min.js');
+  	
+  	$this->headScript()->prependFile($this->baseUrl().'/js/jquery/jquery.jsplumb.js');
+  	
+  	//$this->headScript()->prependFile($this->baseUrl().'/js/raphaeljs/raphael-min.js');
+  	
+  	echo $this->headLink();
+  	echo $this->headScript();
+  	
+  ?>
+  <script>
+  //constante de apoio aos scripts js
+  var baseurl = '<?php echo $this->baseUrl(); ?>';
+  var basephp = '<?php echo $this->baseUrl(); ?>/index.php';
+  </script>
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<div id="header-logo">
+				<a href="<?php echo $this->baseUrl();?>">ProFlow</a>
+			</div>
+			<div id="header-navigation">
+				<?php echo SanSIS_View_Helper_Menu::render($this->baseUrl()); ?>
+			</div>
+		</div>
+		<div id="view-titlebar">
+			<div id="view-title">
+				<?php echo $this->title; ?>
+			</div>
+			<div id="view-subtitle">
+				<?php echo $this->subtitle; ?>
+			</div>
+		</div>
+		<?php echo SanSIS_View_Helper_ActionMenu::render(
+			$this->actionMenu, 
+			$this->baseUrl()
+		); ?>
+		<div id="view-content">
+			<?php
+			
+				echo SanSIS_View_Helper_Message::render($this->displaySystemMessages, $this->baseUrl());
+				echo $this->layout()->content;
+				
+			?> 
+		</div>
+		<div id="footer">
+			&copy; SanSIS 2011 - Todos os direitos reservados.
+		</div>
+	</div>
+</body>
+</html>	

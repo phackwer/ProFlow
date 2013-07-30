@@ -1,0 +1,13 @@
+<ul>
+<?php
+if (count($this->list))
+{
+	foreach ($this->list as $values)
+	{
+		$p = $values['Nome'].' '.$values['Sobrenome'].' ('.$values['Login'].')';
+		$p = preg_replace('/(' . $this->query . ')/i', '<span style="font-weight:bold;">$1</span>', $p);
+		echo "\t".'<li id="autocomplete_'.$values['id'].'" rel="'.$values['id'].'_' . htmlentities($values['Nome'].' '.$values['Sobrenome']) . '">'. $p .'</li>'."\n";
+	}
+}
+?>
+</ul>

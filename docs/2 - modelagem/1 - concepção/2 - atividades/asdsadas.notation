@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <notation:Diagram xmi:id="_-DuoUN__EeKWAqzzncd78g" type="PapyrusUMLActivityDiagram" name="NewDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_-DuoUd__EeKWAqzzncd78g" type="2001" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-DuoUt__EeKWAqzzncd78g" type="5001"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-DuoU9__EeKWAqzzncd78g" type="5002"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-DuoVN__EeKWAqzzncd78g" type="7001">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_-DuoVd__EeKWAqzzncd78g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_-DuoVt__EeKWAqzzncd78g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-DuoV9__EeKWAqzzncd78g"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-DuoWN__EeKWAqzzncd78g" type="7002">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_-DuoWd__EeKWAqzzncd78g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_-DuoWt__EeKWAqzzncd78g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-DuoW9__EeKWAqzzncd78g"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-DuoXN__EeKWAqzzncd78g" type="7003">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_-DuoXd__EeKWAqzzncd78g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_-DuoXt__EeKWAqzzncd78g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-DuoX9__EeKWAqzzncd78g"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-DuoYN__EeKWAqzzncd78g" type="7004">
+        <children xmi:type="notation:Shape" xmi:id="_AJ3OYOAAEeKWAqzzncd78g" type="3005" fontName="Lucida Grande" fontHeight="11" lineColor="0">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AJ4cgOAAEeKWAqzzncd78g" source="ShadowFigure">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AJ4cgeAAEeKWAqzzncd78g" key="ShadowFigure_Value" value="false"/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AJ5DkOAAEeKWAqzzncd78g" source="displayNameLabelIcon">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AJ5DkeAAEeKWAqzzncd78g" key="displayNameLabelIcon_value" value="false"/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AJ5DkuAAEeKWAqzzncd78g" source="QualifiedName">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AJ5Dk-AAEeKWAqzzncd78g" key="QualifiedNameDepth" value="1000"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_AJ5DlOAAEeKWAqzzncd78g" type="5081">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_AJ5DleAAEeKWAqzzncd78g" y="5"/>
+          </children>
+          <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_AJ3OYeAAEeKWAqzzncd78g"/>
+          <element xmi:type="uml:ActivityFinalNode" href="asdsadas.uml#_AGa40OAAEeKWAqzzncd78g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AJ3OYuAAEeKWAqzzncd78g" x="132" y="56"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-DuoYd__EeKWAqzzncd78g"/>
+      </children>
+      <element xmi:type="uml:Activity" href="asdsadas.uml#_-DND4N__EeKWAqzzncd78g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-DuoYt__EeKWAqzzncd78g"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_-DuoY9__EeKWAqzzncd78g"/>
+    <element xmi:type="uml:Activity" href="asdsadas.uml#_-DND4N__EeKWAqzzncd78g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_-D8qwN__EeKWAqzzncd78g" type="PapyrusUMLClassDiagram" name="NewDiagram" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_-D8qwd__EeKWAqzzncd78g"/>
+    <element xmi:type="uml:Model" href="asdsadas.uml#_-CHewN__EeKWAqzzncd78g"/>
+  </notation:Diagram>
+</xmi:XMI>

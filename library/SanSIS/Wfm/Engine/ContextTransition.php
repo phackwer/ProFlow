@@ -1,0 +1,113 @@
+<?php 
+	
+	/**
+	 * Classe responsável por conter a interpretação da Transição de Atividade
+	 * do XPDL para utilização no contexto do processo em execução
+	 * 
+	 * @author Pablo Santiago Sánchez <phackwer@gmail.com>
+	 * @version 1.0.0
+	 * @package SanSIS_Wfm
+	 * @subpackage Engine
+	 *
+	 */
+	class SanSIS_Wfm_Engine_ContextTransition extends SanSIS_Wfm_Base
+	{
+		//atributos requeridos
+		private $process;					//Processo ao qual a Transição pertence
+		private $id;						//id
+		private $from;						//Atividade de origem da Transição
+		private $to;						//Atividade de destino da Transição		
+		
+		/**
+		 * Definição XPDL da transição já carregada em um DOMElement
+		 * @param DOMElement $processNode
+		 */
+		public function __construct(DOMElement $processNode, SanSIS_Wfm_Engine_ContextProcess $process)
+		{
+			$this->process			= $process;
+			$this->id				= $processNode->getAttribute('Id');
+			$this->from				= $processNode->getAttribute('From');
+			$this->to				= $processNode->getAttribute('To');
+			
+			$this->xpdlDefinition	= simplexml_import_dom($processNode)->asXML();
+		}
+		
+		/**
+		 * Obtém id da Transição
+		 * @return string
+		 */
+		public function getId()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo Id da Transição "'.$this->id.'".');
+			
+			return $this->id;
+		}
+		
+		/**
+		 * Obtém origem da Transição
+		 * @return string
+		 */
+		public function getFrom()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo Id da Atividade origem da Transição "'.$this->id.'".');
+			
+			return $this->from;
+		}
+		
+		/**
+		 * Obtém Atividade de origem da Transição
+		 * @return WfContextActivity
+		 */
+		public function getActivityFrom()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo Atividade origem da Transição "'.$this->id.'".');
+			
+			return $this->process->getActivity($this->from);
+		}
+		
+		/**
+		 * Obtém destino da Transição
+		 * @return string
+		 */
+		public function getTo()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo Id da Atividade destino da Transição "'.$this->id.'".');
+			
+			return $this->to;
+		}
+		
+		/**
+		 * Obtém Atividade de destino da Transição
+		 * @return WfContextActivity
+		 */
+		public function getActivityTo()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo Atividade destino da Transição "'.$this->id.'".');
+			
+			return $this->process->getActivity($this->to);
+		}
+		
+		/**
+		 * Obtém Processo que contém a Transição
+		 * @return WfContextProcess
+		 */
+		public function getProcess()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo Processo da Transição "'.$this->id.'".');
+			
+			return $this->process;
+		}
+		
+		/**
+		 * Obtém a definição XPDL da Transição
+		 * @return string
+		 */
+		public function getXPDLDefinition()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo XPDL da Transição "'.$this->id.'".');
+			
+			return $this->xpdlDefinition;
+		}
+	}
+	
+?>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="logo1.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="696.75627"
+     inkscape:cy="635.8539"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="716"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3034">
+      <rect
+         y="99.2733"
+         x="122.87094"
+         height="469.98343"
+         width="496.21518"
+         id="rect3019"
+         style="fill:#aaccff;stroke:none" />
+      <g
+         id="g3024">
+        <g
+           id="g3021">
+          <path
+             sodipodi:nodetypes="cccccccc"
+             inkscape:connector-curvature="0"
+             id="rect2989"
+             d="m 125.51145,478.343 -4.0406,0 c 113.26197,8.26199 126.13974,-255.06352 441.43666,-260.61936 -178.00818,0 -340.28558,277.79195 -48.48733,260.61936 l 102.02542,0 0,90.91373 -490.93415,0 z"
+             style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+        </g>
+        <path
+           style="fill:#0055d4;fill-rule:evenodd;stroke:none"
+           d="m 124.5013,478.343 15.15228,0 c 113.26197,8.26199 107.95699,-234.35539 458.60927,-215.16249 -178.00818,0 -364.52925,244.45691 -62.62946,215.16249 l 81.82236,0 0,90.91373 -492.95445,0 z"
+           id="rect2989-1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccc" />
+        <path
+           style="fill:#000080;fill-rule:evenodd;stroke:none"
+           d="m 122.48099,478.343 36.3655,0 C 280.18968,459.33087 260.74255,316.71859 505.3288,336.92164 c -178.00818,0 -153.40734,141.42136 7.07108,141.42136 l 108.08633,0 0,90.91373 -498.00522,0 z"
+           id="rect2989-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccc" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:80.20301056px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="184.58878"
+       y="554.33569"
+       id="text3030"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3032"
+         x="184.58878"
+         y="554.33569"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Verdana;-inkscape-font-specification:Verdana Bold">ProFlow</tspan></text>
+  </g>
+</svg>

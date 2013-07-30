@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:List" id="1" x="106" y="90" text="[x] selected&#xA;[ ] not selected&#xA;~[ ] disabled~&#xA;~[x] disabled and selected~" measuredWidth="156" measuredHeight="92" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="156" height="22" text="[x] selected"/>
+    <items x="0" y="24" width="156" height="22" text="[ ] not selected"/>
+    <items x="0" y="46" width="156" height="22" text="~[ ] disabled~"/>
+    <items x="0" y="68" width="156" height="22" text="~[x] disabled and selected~"/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="2" x="331" y="84" text="Combo" measuredWidth="68" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

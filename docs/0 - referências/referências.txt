@@ -1,0 +1,11 @@
+http://www.slideshare.net/PerconaPerformance/trees-and-more-with-postgre-s-q-l
+
+Forms
+http://devzone.zend.com/article/3450
+
+
+Navegação
+http://framework.zend.com/manual/en/zend.navigation.html
+http://blog.ekini.net/2009/06/10/zend-framework-navigation-and-breadcrumbs-with-an-xml-file-in-zf-18/
+http://www.zendcasts.com/zend_navigation-dynamically-creating-a-menu-a-sitemap-and-breadcrumbs/2009/06/
+http://stackoverflow.com/questions/1150174/zend-navigation-menu-customising-to-use-jquery-jdmenu

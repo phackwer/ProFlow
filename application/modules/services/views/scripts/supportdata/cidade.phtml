@@ -1,0 +1,12 @@
+<?php 
+
+	if (count($this->list))
+	{
+		echo '<option value="">Selecione abaixo</option>';
+		foreach ($this->list as $values)
+			echo '<option value="'.$values['id'].'">'.$values['nome'].'</option>';			
+	}
+	else
+		echo '<option value="">Nenhuma cidade encontrada</option>';
+
+?>

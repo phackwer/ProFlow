@@ -1,0 +1,68 @@
+<h1>Bem vindo ao ProFlow</h1>
+
+<?php
+
+if (isset($this->perfil['root']) || isset($this->perfil['admin']))
+	echo <<<INFO
+		<p>Esta tela não possui, inicialmente, nenhuma funcionalidade além de informações 
+		básicas aos usuários. Aconselhamos mantê-la operacional, uma vez que serve como uma ajuda a
+		todo novo usuário. As informações apresentadas aqui variam de acordo com o perfil do usuário.
+		Você poderá editar este conteudo diretamente para alteração, acréscimo ou remoção de informações em:<br><br>
+
+INFO;
+
+if (isset($this->perfil['root']) || isset($this->perfil['admin']))
+	echo APPLICATION_PATH.'\views\sript\index\index.html';
+
+if (isset($this->perfil['root']) || isset($this->perfil['admin']) || isset($this->perfil['designer']))
+	echo <<<INFO
+	<h2>O que é o ProFlow?</h2>
+	
+	<p>ProFlow é um sistema para Gestão de Processos com o objetivo de prover não apenas 
+	um mapeamento dos processos de uma organização, mas também sua automatização de maneira
+	simples e eficaz.</p>
+	
+	<p>O mapeamento de seus processos e a automatização dos mesmos permitirá, com o tempo, que você
+	consiga analisar e melhorar os gargalos de seu processo. Isso ajuda a reduzir custos e a gerir
+	a organização de forma mais eficiente.</p>
+	
+	<p>Para que isso seja possível, diversos relatórios estão disponíveis para auxiliá-lo a visualizar
+	estes problemas, e novos podem ser incluídos através de serviços especializados de customização.</p>
+	
+	<p>Por ser um sistema de tecnologia aberta, você tem total liberdade para estudar, alterar e melhorar
+	o código, além de incluir, remover ou alterar funcionalidades do ProFlow.</p>
+	
+	<p>Lembre-se: a eficiência do ProFlow é proporcional à eficiência de seus processos. Por isso, aconselhamos
+	que o <a href="http://pt.wikipedia.org/wiki/Ciclo_PDCA" target="pdca">ciclo PDCA</a> seja aplicado constantemente.</p>
+	
+	<h2>Por onde começar</h2>
+	
+	<p>Antes de poder utilizar o ProFlow, algumas informações são necessárias para seu correto funcionamento.</p>
+	
+INFO;
+
+if (isset($this->perfil['root']) || isset($this->perfil['admin']))
+	echo <<<INFO
+	<h3>Configuração básica</h3>
+	<ul>
+	<li> Criação e Configuração do Banco de Dados </li>
+	<li> Popular tabelas de Apoio </li>
+	<li> Criar conta de Super-Usuário </li>
+	<li> Criar outras contas </li>
+	<li> Menu especial: Sistema</li>
+	</ul>
+
+INFO;
+
+if (isset($this->perfil['root']) || isset($this->perfil['designer'])) 
+	echo <<<INFO
+	<h3>Mapeamento e Modelagem de Processos</h3>
+
+INFO;
+
+if (isset($this->perfil['root']) || isset($this->perfil['participant'])) 
+	echo <<<INFO
+	<h3>Gestão e Execução de Processos</h3>
+
+INFO;
+

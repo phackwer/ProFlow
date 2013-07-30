@@ -1,0 +1,41 @@
+http://rapilabs.com/products/rigrr
+
+http://www.diigo.com/list/nperriault/web-diagramming
+
+
+http://www.processwave.org/
+http://ui.ajax.org/#demos/elements.flowchart
+http://code.google.com/p/jsplumb/downloads/list
+http://neyric.github.com/wireit/index.html
+http://www.cubedrive.com/flowPublic?id=HQypsxuhMgQ_&viewStatus=publicView
+
+http://raphaeljs.com/
+http://processingjs.org/
+http://thejit.org/
+
+http://html5app.com/blog/?cat=4
+http://www.html5canvastutorials.com/tutorials/html5-canvas-element/
+http://www.html5rocks.com/en/tutorials/canvas/integrating/#shaded
+http://www.sitepoint.com/html5-canvas-draw-bezier-curves/
+http://umlcanvas.org/
+http://plugins.jquery.com/project/canvas
+http://simonsarris.com/blog/140-canvas-moving-selectable-shapes
+http://slashmili.org/create-flowchart-with-jquery-and-canvas
+
+Layout:
+http://themeforest.net/item/constellation-complete-admin-skin/discussion/116461?page=16
+
+Editor de BPMN online
+http://www.ekuar.com/
+http://code.google.com/p/oryx-editor/ - http://code.google.com/p/oryx-editor/source/checkout
+
+Vários editores BPMN GPL
+http://www.jped.org/
+http://bpt.hpi.uni-potsdam.de/Oryx http://oryx-project.org/ http://www.oryx-editor.org/
+http://www.together.at/prod/workflow/twe
+http://developer.tibco.com/business_studio/default.jsp
+http://bxmodeller.eng.it
+
+http://www.wfmc.org/xpdl.html
+http://www.omg.org/technology/documents/br_pm_spec_catalog.htm
+http://wfmopen.sourceforge.net/userapi/de/danet/an/workflow/omgcore/package-summary.html#package_description

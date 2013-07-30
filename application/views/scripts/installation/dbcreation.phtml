@@ -1,0 +1,15 @@
+<p>Esta etapa da instalação visa a criação do banco de dados em sua instalação do SGDB PostgreSQL, bem como um usuário de acesso
+à base do ProFlow com permissão limitada à inserção, atualização e seleção. Não existe, no código do ProFlow, a opção de exclusão física
+de qualquer registro. Apenas a exclusão lógica é permitida.</p>
+<p>Para tal configuração, é necessário informar o login e senha de um super-usuário do PostgreSQL com permissão para criação de 
+banco de dados e contas de usuários.</p>
+<p>Por motivos de segurança, esta informação de login do superusuário não é gravada em lugar nenhum, a fim de evitar ataques de 
+SQL Injection que pudessem colocar em risco sua base de dados, e é utilizada exclusivamente para a criação do banco e da conta
+de acesso.</p>
+<p>Caso prefira, você poderá criar o banco de dados e a conta de acesso manualmente, porém deve informar obrigatoriamente o servidor
+e o nome do banco a ser utilizado.</p>
+<p>No caso de optar pela criação manual do banco, lembre-se que o charset deverá ser UTF-8. Utilize o script localizado em
+data/ProFlow.sql para a criação da estrutura de tabelas do banco de dados. Não altere absolutamente nada neste script.
+<p>Não aconselhamos a criação manual do banco de dados e usuário a fim de reduzir os riscos à sua instalação.</p>
+
+<?php echo $this->form;?>

@@ -1,0 +1,106 @@
+<?php 
+	
+	/**
+	 * Classe responsável por definir as Associações
+	 * do XPDL para utilização no contexto do processo em execução
+	 * 
+	 * @author Pablo Santiago Sánchez <phackwer@gmail.com>
+	 * @version 1.0.0
+	 * @package SanSIS_Wfm
+	 * @subpackage Engine
+	 *
+	 */
+	class SanSIS_Wfm_Engine_ContextAssociation extends SanSIS_Wfm_Base
+	{
+		//atributos requeridos
+		private $context;				//Contexto ao qual a Associação pertence
+		private $id;					//id
+		private $name;					//nome
+		private $source;				//origem
+		private $target;				//destino
+		
+		/**
+		 * Construtor
+		 * @param DOMElement $processNode
+		 * @param string $type
+		 * @param string $logic
+		 */
+		public function __construct(DOMElement $processNode, SanSIS_Wfm_Engine_ContextData $context)
+		{
+			SanSIS_Wfm_Debug_Debug::info('Mapeando Associação.');
+			
+			$this->context			= $context;
+			$this->id				= $processNode->getAttribute('Id');
+			$this->name				= $processNode->getAttribute('Name');
+			
+			//busca atividade, objecto de dados ou associação como origem da associação
+			$this->setSource($this->context->getElementById($processNode->getAttribute('Source')));
+			//busca atividade, objecto de dados ou associação como destino da associação
+			$this->setTarget($this->context->getElementById($processNode->getAttribute('Target')))   ;
+			
+			$this->xpdlDefinition	= simplexml_import_dom($processNode)->asXML();
+			
+			SanSIS_Wfm_Debug_Debug::log('Associação mapeada.');
+		}
+		
+		/**
+		 * Define um objeto da Wf como source da Associação
+		 * @param WfContextTransition $transition
+		 * @return void
+		 */
+		public function setSource($source)
+		{
+			$id = $source->getId();
+			$this->source = $source;
+			
+			SanSIS_Wfm_Debug_Debug::log('Objeto "'.$id.'" definido como source da Associação.');
+		}
+
+		/**
+		 * Define um objeto da Wf como target da Associação
+		 * @param WfContextTransition $transition
+		 * @return void
+		 */
+		public function setTarget($target)
+		{
+			$id = $target->getId();
+			$this->target = $target;
+			
+			SanSIS_Wfm_Debug_Debug::log('Objeto "'.$id.'" definido como target da Associação.');
+		}
+		
+		/**
+		 * Obtém um objeto da Wf como source da Associação
+		 * @return Object
+		 */
+		public function getSource()
+		{
+			SanSIS_Wfm_Debug_Debug::log('Obtendo Objeto source "'.$id.'" da Associação.');
+			
+			return $this->source = $source;
+		}
+
+		/**
+		 * Obtém um objeto da Wf como target da Associação
+		 * @return Object
+		 */
+		public function getTarget()
+		{			
+			SanSIS_Wfm_Debug_Debug::log('Obtendo Objeto target "'.$id.'" da Associação.');
+			
+			return $this->target = $source;
+		}		
+		
+		/**
+		 * Obtém a definição XPDL do Contexto
+		 * @return string
+		 */
+		public function getXPDLDefinition()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo XPDL da Restrição.');
+			
+			return $this->xpdlDefinition;
+		}
+	}
+	
+?>

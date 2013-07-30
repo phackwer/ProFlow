@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_-CHewN__EeKWAqzzncd78g" name="model">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_-DND4N__EeKWAqzzncd78g" name="Activity1">
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_AGa40OAAEeKWAqzzncd78g" name="ActivityFinalNode1"/>
+  </packagedElement>
+</uml:Model>

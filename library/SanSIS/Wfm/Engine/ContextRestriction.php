@@ -1,0 +1,96 @@
+<?php 
+	
+	/**
+	 * Classe responsável por conter a Retrição de Transição da Atividade
+	 * do XPDL para utilização no contexto do processo em execução
+	 * 
+	 * @author Pablo Santiago Sánchez <phackwer@gmail.com>
+	 * @version 1.0.0
+	 * @package SanSIS_Wfm
+	 * @subpackage Engine
+	 *
+	 */
+	class SanSIS_Wfm_Engine_ContextRestriction extends SanSIS_Wfm_Base
+	{
+		//atributos requeridos
+		private $type;					//Split ou Join
+		private $logic;					//XOR ou AND
+		private $appliesTo	= array();	//Transições ao qual é aplicado
+		
+		/**
+		 * Construtor
+		 * @param DOMElement $processNode
+		 * @param string $type
+		 * @param string $logic
+		 */
+		public function __construct(DOMElement $processNode, $type, $logic)
+		{
+			SanSIS_Wfm_Debug_Debug::info('Mapeando Restrição.');
+			
+			$this->type = $type;
+			$this->logic = $logic;
+			
+			$this->xpdlDefinition	= simplexml_import_dom($processNode)->asXML();
+			
+			SanSIS_Wfm_Debug_Debug::log('Restrição mapeada.');
+		}
+
+		/**
+		 * Adiciona uma Transição à qual a Restrição faz referência
+		 * @param WfContextTransition $transition
+		 * @return void
+		 */
+		public function addTransition(SanSIS_Wfm_Engine_ContextTransition $transition)
+		{
+			$id = $transition->getId();
+			$this->appliesTo[$id] = $transition;
+			
+			SanSIS_Wfm_Debug_Debug::log('Transição "'.$id.'" associada à Restrição.');
+		}
+		
+		/**
+		 * Obtém as Transições às quais a Restrição é aplicada 
+		 * @return array WfContextTransition
+		 */
+		public function getTransitions()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo Transições às quais a Restrição é aplicada.');
+			
+			return $this->appliesTo;
+		}
+		
+		/**
+		 * Obtém o Tipo da Restrição (Split/Join)
+		 * @return string
+		 */
+		public function getType()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo Tipo da Restrição.');
+			
+			return $this->type;	
+		}
+		
+		/**
+		 * Obtém a Lógica da Restrição (AND/XOR)
+		 * @return string
+		 */
+		public function getLogic()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo Lógica da Restrição.');
+			
+			return $this->logic;
+		}
+		
+		/**
+		 * Obtém a definição XPDL do Contexto
+		 * @return string
+		 */
+		public function getXPDLDefinition()
+		{
+			SanSIS_Wfm_Debug_Debug::info('Obtendo XPDL da Restrição.');
+			
+			return $this->xpdlDefinition;
+		}
+	}
+	
+?>

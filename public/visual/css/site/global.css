@@ -1,0 +1,1117 @@
+/**********************************************
+ *                                            *
+ * Folha de estilos para elementos do projeto *
+ *                                            *
+ **********************************************/
+
+body
+{
+	background-color: #333333;
+	color: #000000;
+	margin: 0px;
+	font-family: Verdana, Sans-Serif, Arial, Helvetica;
+	font-size: 12px;
+	background-image: url('../../images/site/header.png');
+	background-repeat: repeat-x;
+	background-color: #EEEEEE;
+}
+
+
+
+a:link, a:visited, a:active, a:hover
+{
+	color: #0000FF;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#main
+{
+	position: relative;
+	z-index: 0;
+	padding-bottom: 25px;
+	min-height: 100%;
+}
+
+#header
+{
+	height: 118px;
+}
+
+#header-logo
+{
+	color: #FFFFFF;
+	font-size: 40px;
+	padding: 5px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 18px;
+}
+
+#header-logo a:link, #header-logo a:visited, #header-logo a:active, #header-logo a:hover
+{
+	color: #FFFFFF;
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+#header-navigation
+{
+	color: #000000;
+	height: 22px;
+}
+
+.header-navigation-links
+{
+	position: relative;
+	color: #000000;
+	float: left;
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #CCCCCC;
+	height: 20px;
+	padding-left: 0px;
+	padding-right: 15px;
+	padding-top: 7px;
+	padding-bottom: 4px;
+	cursor: pointer;
+	width: 150px;
+}
+
+.header-navigation-system-links
+{
+	position: relative;
+	color: #000000;
+	float: right;
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #CCCCCC;
+	height: 20px;
+	padding-left: 0px;
+	padding-right: 15px;
+	padding-top: 7px;
+	padding-bottom: 4px;
+	cursor: pointer;
+	width: 150px;
+}
+
+.header-navigation-menu
+{
+	width: 150px;
+	position: inherit;
+	cursor: pointer;
+	top: 10px;
+}
+
+.header-navigation-menu-item
+{
+	color: #000000;
+	border-left: 1px solid #EEEEEE;
+	border-top: 1px solid #EEEEEE;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	height: 20px;
+	width: 100%	;
+	background-color: #FFFFFF;
+	position: inherit;
+	list-style-type: square;
+	list-style-position: inside;
+	cursor: pointer;
+	
+	padding-left: 0px;
+	padding-right: 15px;
+	padding-top: 7px;
+	padding-bottom: 4px;
+}
+
+.header-navigation-menu-item:hover
+{
+	color: #FFFFFF;
+	border-left: 1px solid #EEEEEE;
+	border-top: 1px solid #EEEEEE;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	height: 20px;
+	width: 100%;
+	background-color: #0075e9;
+	position: inherit;
+	list-style-type: square;
+	list-style-position: inside;
+	cursor: pointer;
+	
+	padding-left: 0px;
+	padding-right: 15px;
+	padding-top: 7px;
+	padding-bottom: 4px;
+}
+
+#header-navigation a:link, #header-navigation a:visited, #header-navigation a:active
+{
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#header-navigation a:hover
+{
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#view-content
+{
+	padding-bottom: 20px;
+}
+
+#view-titlebar
+{
+	height: 44px;
+	padding: 0px;
+	margin-top: 10px;
+}
+
+#view-title
+{
+	font-size: 15px;
+	height: 18px;
+	padding: 3px;
+	padding-left: 15px;
+}
+
+#view-subtitle
+{
+	color: #000000;
+	font-size: 12px;
+	height: 14px;
+	padding: 3px;
+	padding-left: 15px;
+}
+
+#view-navigation 
+{
+	font-size: 10px;
+	height: 14px;
+	margin-top: 10px;
+	padding: 2px;
+	padding-left: 15px;
+	text-decoration: none;
+}
+
+#view-navigation a:link, #view-navigation a:visited, #view-navigation a:active, #view-navigation a:hover
+{
+	color: #0000FF;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+#view-content
+{
+	color: #000000;
+	margin: 15px;
+}
+
+.view-textarea 
+{
+	border:1px solid #AAA; 
+	padding:0 1px 1px; 
+	background-color:white; 
+	clear: right; 
+	position: relative;
+	width: 650px;
+	height: 250px;
+	overflow: auto;
+}
+
+#footer
+{
+	position: absolute;
+	background-color: #000000;
+	color: #FFFFFF;
+	border: 3px solid #000000;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+/**********************************************
+ *                                            *
+ *                Formul�rios                 *
+ *                                            *
+ **********************************************/
+
+form dl
+{
+}
+ 
+form dl dt
+{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+form dl dd 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+fieldset
+{
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	border: 1px solid #AAAAAA;	
+	background-color: #FFFFFF;		
+	
+}
+
+fieldset legend
+{
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	border-top: 1px solid #AAAAFF;
+	border-left: 1px solid #AAAAFF;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: bold;
+	font-size: 14px;	
+	color: #FFFFFF;
+	background-color: #0075e9;
+}
+
+fieldset dl
+{
+}
+ 
+fieldset dl dt
+{
+    float:left;
+    margin-right:10px;
+    padding:5px;
+    width:200px;
+}
+ 
+fieldset dl dd 
+{
+    margin:2px 0;
+    padding:5px 0;
+    clear: right; 
+}
+
+#fieldset-ActionBar
+{
+	margin: 0px;
+	border-width:0px;
+	
+	background-color: #EEEEEE;
+}
+
+#fieldset-ActionBar dl dt
+{
+	width:0px;
+	margin-right:0px;
+    padding:0px;
+	float:left;
+}
+
+#fieldset-ActionBar dl dd
+{
+	float:left;
+	margin-right:20px;
+}
+
+#fieldset-membros dl dt
+{
+	width:auto;
+	margin-right:10px;
+    padding:0px;
+	float:left;
+	padding-top:5px;
+}
+
+#fieldset-membros dl dd
+{
+	float:left;
+	padding:0px;
+	margin-right:20px;
+}
+
+.button
+{
+	margin: 0px;
+	border	: 1px solid #666666;
+	padding: 5px;
+	width: 100px;
+	
+	background-color: #DDDDDD;
+	cursor: pointer;
+	
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.button:hover
+{
+	margin: 0px;
+	border: 1px solid #FFFFFF;
+	padding: 5px;
+	width: 100px;
+	
+	color:#FFFFFF;
+	background-color: #0075e9;
+	cursor: pointer;
+	
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.button:active
+{
+	margin: 0px;
+	border: 1px solid #000000;
+	padding: 5px;
+	width: 100px;
+	
+	color:#FFFFFF;
+	background-color: #666666;
+	cursor: pointer;
+	
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.button[disabled], .button[disabled]:active, .button[disabled]:hover 
+{
+	margin: 0px;
+	border	: 1px solid #AAAAAA;
+	padding: 5px;
+	width: 100px;
+	
+	color:#AAAAAA;
+	background-color: #DDDDDD;
+	cursor: default;
+	
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+input
+{
+	border: 1px solid #AAAAAA;
+}
+
+textarea
+{
+	border:1px solid #AAA; 
+	padding:0 1px 1px; 
+	background-color:white; 
+	clear: right; 
+	position: relative;
+	width: 650px;
+	height: 250px;
+	overflow: auto;
+}
+
+/**********************************************
+ *                                            *
+ *                    Grids                   *
+ *                                            *
+ **********************************************/
+
+table 
+{
+	font-family: Verdana, Sans-Serif, Arial, Helvetica;
+	font-size: 12px;
+	border-collapse:collapse;
+	min-width: 50%;
+	margin-bottom: 10px;
+}
+
+table, th, td
+{
+	border: 1px solid black;
+	font-family: Verdana, Sans-Serif, Arial, Helvetica;
+	font-size: 12px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #FFFFFF;
+}	
+
+table caption
+{
+	font-family: Verdana, Sans-Serif, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+table th
+{	
+	background-color: #0075e9;
+	color: #FFFFFF;
+}
+
+.listagem
+{
+	clear: both;
+}
+
+/**********************************************
+ *                                            *
+ *           Mensagens e componentes          *
+ *                                            *
+ **********************************************/
+ 
+  .icoEditar:hover,.icoExcluir:hover,.icoAceitar:hover,.icoAdicionar:hover,.icoGrafico:hover,.icoImprimir:hover,.icoBloquear:hover,.icoDesbloquear:hover,.icoDownload:hover,.icoVisualizar:hover,.icoWord:hover,.icoExcel:hover,.icoOffice:hover,.icoPDF:hover,.icoErro:hover,.icoAjuda:hover,.icoPesquisar:hover,.icoCalendario:hover,.icoCalculadora:hover,.icoFonteMaior:hover,.icoFonteNormal:hover,.icoFonteMenor:hover,.icoAltoContraste:hover,.icoFundoBranco:hover,.icoFundoAzul:hover,.icoFundoAmarelo:hover,.icoFundoCinza:hover,.icoAssociar:hover,.icoDesassociar:hover,.icoSubir:hover,.icoDescer:hover,.icoValor:hover,.icoExcluirValor:hover,.icoEncaminhar:hover
+{
+	border: 1px solid #6e8ea3 !important;
+	cursor: pointer
+}
+
+.icoEditar,.icoExcluir,.icoAceitar,.icoAdicionar,.icoGrafico,.icoImprimir,.icoBloquear,.icoDesbloquear,.icoDownload,.icoVisualizar,.icoWord,.icoExcel,.icoOffice,.icoPDF,.icoErro,.icoAjuda,.icoPesquisar,.icoCalendario,.icoCalculadora,.icoFonteMaior,.icoFonteNormal,.icoFonteMenor,.icoAltoContraste,.icoFundoBranco,.icoFundoAzul,.icoFundoAmarelo,.icoFundoCinza,.icoAssociar,.icoDesassociar,.icoSubir,.icoDescer,.icoValor,.icoExcluirValor,.icoEncaminhar
+{
+	background: url(../../images/components/iconesNormal.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #fff;
+	text-indent: 50px
+}
+
+.disabled 
+{
+	background: url(../../images/components/iconesDisabled.gif) no-repeat;
+	border: 1px solid #fff
+}
+
+.disabled:hover 
+{
+	border: 1px solid #fff;
+	cursor: default
+}
+
+.icoEditar 
+{
+	background-position: 0 0
+}
+
+.icoExcluir 
+{
+	background-position: -20px 0
+}
+
+.icoAceitar 
+{
+	background-position: -40px 0
+}
+
+.icoAdicionar 
+{
+	background-position: -60px 0
+}
+
+.icoGrafico 
+{
+	background-position: -80px 0
+}
+
+.icoImprimir 
+{
+	background-position: -100px 0
+}
+
+.icoBloquear 
+{
+	background-position: -120px 0
+}
+
+.icoDesbloquear 
+{
+	background-position: -140px 0
+}
+
+.icoDownload 
+{
+	background-position: -160px 0
+}
+
+.icoVisualizar 
+{
+	background-position: -180px 0
+}
+
+.icoAssociar 
+{
+	background-position: -200px 0
+}
+
+.icoDesassociar 
+{
+	background-position: -220px 0
+}
+
+.icoSubir 
+{
+	background-position: -240px 0
+}
+
+.icoDescer 
+{
+	background-position: -260px 0
+}
+
+.icoValor 
+{
+	background-position: -280px 0
+}
+
+.icoExcluirValor 
+{
+	background-position: -300px 0
+}
+
+.icoEncaminhar 
+{
+	background-position: -320px 0
+}
+
+.icoWord 
+{
+	background-position: -340px 0
+}
+
+.icoExcel 
+{
+	background-position: -360px 0
+}
+
+.icoOffice 
+{
+	background-position: -380px 0
+}
+
+.icoPDF 
+{
+	background-position: -400px 0
+}
+
+.icoErro 
+{
+	background-position: -420px 0
+}
+
+.icoAjuda 
+{
+	background-position: -440px 0
+}
+
+.icoPesquisar 
+{
+	background-position: -460px 0
+}
+
+.icoCalendario 
+{
+	background-position: -480px 0
+}
+
+.icoCalculadora 
+{
+	background-position: -500px 0
+}
+
+.datetime
+{
+	width:130px;
+}
+ 
+.date
+{
+	width:70px;
+}
+ 
+.time
+{
+	width:70px;
+}
+ 
+.calendarIcon
+{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+ 
+.phone
+{
+       width:130px;
+}
+
+.cep
+{
+	width:80px;
+}
+ 
+.clockIcon
+{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+ 
+.msgSucesso
+{
+	-moz-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;
+	-moz-border-top-right-radius: 15px;
+	border-top-right-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;	
+	
+	border: 2px solid #009900;
+	background-color: #009900;
+	color: #FFFFFF;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+ 
+.msgAlerta
+{
+	-moz-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;
+	-moz-border-top-right-radius: 15px;
+	border-top-right-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;	
+	
+	border: 2px solid #000000;
+	background-color: #FFFF00	;
+	color: #000000;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.msgErro
+{
+	-moz-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;
+	-moz-border-top-right-radius: 15px;
+	border-top-right-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	
+	border: 2px solid #FF0000;
+	background-color: #FF0000;
+	color: #FFFFFF;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.msgOrientacao
+{
+	-moz-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;
+	-moz-border-top-right-radius: 15px;
+	border-top-right-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	
+	border: 2px solid #0000FF;
+	background-color: #0000FF;
+	color: #FFFFFF;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.errors
+{
+	margin-left: 200px;
+	font-style: italic;
+	font-size: 10px;
+	color: #FF0000;
+}
+
+.required
+{
+	
+}
+
+.description
+{
+	margin-left: 220px;
+	font-style: italic;
+	font-size: 10px;
+	color: #999999;
+}
+
+.listagem 
+{
+	display: block !important;
+	margin: 5px 20px;
+	position: relative !important
+}
+
+#conteudo form div.listagem 
+{
+	margin: 5px 0 !important
+}
+
+.listagem table caption 
+{
+	font-family: Verdana, Sans-Serif, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+.listagem table 
+{
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 1px solid #6e8ea3
+}
+
+.listagem table.list 
+{
+	border-bottom: none !important
+}
+
+.listagem table thead th 
+{
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: normal;
+	border: 1px solid #6e8ea3
+}
+
+.listagem table thead th a 
+{
+	color: #fff !important
+}
+
+.listagem table th,.listagem table td 
+{
+	padding: 4px;
+	vertical-align: middle
+}
+
+.listagem table tr td 
+{
+	border: 1px dotted #6e8ea3
+}
+
+.listagem table tr.odd 
+{
+	background: #eaf0f7
+}
+
+.listagem table tr.even 
+{
+	background: #f4f7fb
+}
+
+.listagem table tr.odd .sorting_1 
+{
+	background: #dce5f1
+}
+
+.listagem table tr.odd .sorting_2,.listagem table tr.odd .sorting_3 
+{
+	background: #e4ebf4
+}
+
+.listagem table tr.even .sorting_1 
+{
+	background: #e7edf5
+}
+
+.listagem table tr.even .sorting_2,.listagem table tr.even .sorting_3 
+{
+	background: #eef3f8
+}
+
+.listagem table tr.odd .icons a 
+{
+	border-color: #eaf0f7 !important
+}
+
+.listagem table tr.odd .icons a:hover 
+{
+	border-color: #6e8ea3 !important
+}
+
+.listagem table tr.even .icons a 
+{
+	border-color: #f4f7fb !important
+}
+
+.listagem table tr.even .icons a:hover 
+{
+	border-color: #6e8ea3 !important
+}
+
+th.sorting,th.sorting_asc,th.sorting_desc {
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 15px !important
+}
+
+th.itemSelect {
+	background-position: 7px !important
+}
+
+.listagem table tr.listagemItem td:first-child,td.itemSelect {
+	width: 15px;
+	background-color: #b5cfdf
+}
+
+.listagem table tbody th {
+	border: 1px dotted #578caf;
+	background-color: #e6eff4;
+	color: #333
+}
+
+.listagem .listagemAcoesBarra {
+	position: absolute;
+	height: 32px;
+	overflow: hidden;
+	right: 0
+}
+
+.listagem .listagemAcoesBarra div {
+	float: left;
+	margin-right: 10px;
+	line-height: 32px
+}
+
+.listagemAcoesBarra .DTTT_button {
+	width: 26px;
+	height: 26px;
+	border: 0;
+		!important;
+	overflow: hidden;
+	text-indent: 50px;
+	margin-left: 5px;
+	white-space: nowrap
+}
+
+.listagemAcoesBarra .DTTT_button_print {
+	background-position: 0 0
+}
+
+.listagemAcoesBarra .DTTT_button_print_hover {
+	background-position: 0 -26px
+}
+
+.listagemAcoesBarra .DTTT_button_copy {
+	background-position: -26px 0
+}
+
+.listagemAcoesBarra .DTTT_button_copy_hover {
+	background-position: -26px -26px
+}
+
+.listagemAcoesBarra .DTTT_button_csv {
+	background-position: -104px 0
+}
+
+.listagemAcoesBarra .DTTT_button_csv_hover {
+	background-position: -104px -26px
+}
+
+.listagemAcoesBarra .DTTT_button_xls {
+	background-position: -78px 0
+}
+
+.listagemAcoesBarra .DTTT_button_xls_hover {
+	background-position: -78px -26px
+}
+
+.listagemAcoesBarra .DTTT_button_pdf {
+	background-position: -52px 0
+}
+
+.listagemAcoesBarra .DTTT_button_pdf_hover {
+	background-position: -52px -26px
+}
+
+.listagemNavegacao {
+	margin-bottom: 5px;
+		repeat-x;
+	height: 32px;
+	color: #193141
+}
+
+.listagemPaginacao 
+ {
+	text-align: right;
+	display: block !important;
+	display: table;
+	overflow: hidden;
+	float: right;
+	line-height: 32px
+}
+
+.listagemPaginacao div 
+{
+	float: left;
+	margin-right: 10px
+}
+
+.listagemPaginacao li a,.listagemPaginacao li.nolink,.listagemPaginacao .paginate_button,.listagemPaginacao .paginate_active
+{
+	border: 1px solid #c3c3c3;
+	padding: 2px !important;
+	margin-right: 1px !important
+}
+
+.listagemPaginacao .paginate_button:hover,.listagemPaginacao li a:hover
+{
+	border-color: #193141
+}
+
+.listagemPaginacao li a,.listagemPaginacao li.nolink,.listagemPaginacao .paginate_button
+{
+	cursor: pointer
+}
+
+.listagemPaginacao li.current,.listagemPaginacao .paginate_active 
+{
+	color: #fff;
+	background-color: #193141;
+	padding: 0 4px !important
+}
+
+.listagemPaginacao .first,.listagemPaginacao .previous,.listagemPaginacao .next,.listagemPaginacao .last
+{
+	padding: 2px 4px;
+	font-weight: bold
+}
+
+.listagemPaginacao ul 
+{
+	margin: 0 10px !important;
+	padding: 0 !important;
+	display: inline;
+	list-style-type: none
+}
+
+.listagemPaginacao li 
+{
+	display: inline;
+	margin: 0 !important;
+	padding: 0 !important
+}
+
+.listagemPaginacao li a 
+{
+	color: #193141;
+	text-decoration: none;
+	display: inline
+}
+
+.listagemPaginacao li.nolink 
+{
+	cursor: auto !important
+}
+
+.listagemAcoes 
+{
+	padding: 0 10px 0 5px;
+	line-height: 32px;
+	position: absolute;
+	left: 1px;
+	bottom: 1px
+}
+
+.listagemAcoes label 
+{
+	text-transform: lowercase;
+	margin: 0 !important;
+	display: inline !important
+}
+
+.listagemAcoes label span 
+{
+	font-size: 1.3em;
+	font-weight: bold;
+	width: auto !important;
+	border: none !important
+}
+
+.listagemAcoes select 
+{
+	font-size: .85em;
+	margin: 0 !important;
+	height: 22px;
+	padding: 1px
+}
+
+.listagemAcoes select option 
+{
+	height: 20px;
+	line-height: 20px
+}
+
+.listagemAcoes input 
+{
+	font-size: .85em !important;
+	margin: 0 !important
+}
+
+.listagemVazia 
+{
+	text-align: left;
+	font-weight: bold;
+	color: #333;
+	padding: 15px 10px !important
+}
+
+p.listagemVazia 
+{
+	background: #fff !important;
+	margin: 5px 0 !important;
+	border: 1px dotted #f3f3f3
+}
+
+.listagemIco 
+{
+	text-align: right
+}
+
+.listagemIco img 
+{
+	border: 0
+}
+
+.listagemIco a 
+{
+	padding: 0;
+	margin-left: 3px
+}
